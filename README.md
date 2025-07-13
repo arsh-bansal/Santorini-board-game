@@ -1,50 +1,37 @@
-# 🏛️ Santorini Board Game
+# Game Implementation folder
 
-Welcome to **Santorini**, a strategy-based board game reimagined in Python!  
-This project is a digital recreation of the award-winning board game where players compete to build towers and outwit their opponents using special god powers.
+## Steps to create an executable file.
 
----
+1. Create a virtual environment (inside Game Implementation folder)
 
-## 🎯 Objective
+`python -m venv .venv` (Windows)
 
-Be the first player to move one of your workers to the **third level** of a tower — but beware, each player may wield **unique god powers** that can alter the rules of play!
+OR
 
----
+`python3 -m venv .venv` (MacOS)
 
-## 🚀 Features
+2. Activate virtual environment
 
-- 🧠 Turn-based gameplay with rule enforcement  
-- 👤 2-player mode (local)  
-- 🏗️ 3-level building system with dome capping  
-- 🧙‍♂️ **God Powers**:
-  - **Artemis** – Move twice (not back to the original space)  
-  - **Demeter** – Build twice (not on the same space)  
-  - **Zeus** – Build beneath your current worker  
-- 🖱️ Interactive GUI built with **Tkinter**  
-- ✅ Win detection and move validation  
-- 🧱 Object-Oriented Design for modularity and scalability  
+`.\venv\Scripts\activate` (Windows)
 
----
+OR
 
-## 🧱 How to Play
+`. .venv/bin/active` (MacOS)
 
-1. **Place Workers** – Each player gets two workers placed randomly on the board.  
-2. **Take Turns** – On your turn:
-   - Move one of your workers to an adjacent space.
-   - Build one level in an adjacent space.
-   - Use your **god power** if available.
-3. **Win the Game** – Move your worker onto the **3rd level** of any tower to win!
+3. Install dependencies
 
-> If you're using a God Power, its special rule will modify your standard actions.
+`pip install -r requirements.txt`
 
----
+4. Build the binary
 
-## 🎨 Technologies Used
+`pyinstaller --onefile main.py`
 
-- 🐍 **Python 3**  
-- 🖼️ **Tkinter** (for the GUI)  
-- 🧱 **Object-Oriented Programming** principles  
+5. Run the program (MacOS).
 
----
+   - Go to System Settings
+   - Select Privacy and Security from the sidebar
+   - Allow the main_unix app under the security section
+   - Then run `./dist/main`
 
-Let the battle of wit and strategy begin! ⚔️🏛️  
+6. Run the program (Windows)
+   - Double click, duh.
