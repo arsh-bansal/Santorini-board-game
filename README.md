@@ -23,7 +23,8 @@ Be the first player to move one of your workers to the **third level** of a towe
 - 🖱️ Interactive GUI built with **Tkinter**  
 - ✅ Win detection and move validation  
 - 🧱 Object-Oriented Design for modularity and scalability  
-
+-  ฺ  Hint system
+- ⏳ Timer for both players
 ---
 
 ## 🧱 How to Play
